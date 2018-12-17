@@ -1,13 +1,13 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = "v!"
+var prefix = "s!"
 
 
 
 //bc
 
 client.on("message", message => {
-    if (message.content.startsWith("v!obc")) {
+    if (message.content.startsWith("s!obc")) {
                  if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' ');
@@ -23,7 +23,7 @@ client.on("message", message => {
 //bc online
 
 
-  var prefix = "v!";
+  var prefix = "s!";
 
   client.on("message", message => {
   
@@ -66,7 +66,7 @@ client.on('ready',  () => {
   client.on('message', message => {
     if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
-if (message.content.startsWith('v!adminbc')){
+if (message.content.startsWith('s!adminbc')){
 if(!message.author.id === '476185102922285066') return;
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
@@ -79,7 +79,7 @@ m.sendMessage(args)
 
   
   client.on('message', msg => {
-    if(msg.content === 'v!help')
+    if(msg.content === 's!help')
     msg.reply('Check Your DM :white_check_mark:')
   });
   
@@ -99,13 +99,13 @@ m.sendMessage(args)
          .setThumbnail(message.author.avatarURL)
          .setDescription(`**Help|هيلب
 
-       v!obc | لأرسال برود كاست للكل
+       s!obc | لأرسال برود كاست للكل
 
-       v!bc  |  لأرسال برود كاست للأونلاين
+       s!bc  |  لأرسال برود كاست للأونلاين
 
-       v!invite | لدعوة البوت الي سيرفرك
+       s!invite | لدعوة البوت الي سيرفرك
 
-       v!support | سيرفر السبورت** `)
+       s!support | سيرفر السبورت** `)
    message.author.sendEmbed(embed)
    
    }
@@ -113,10 +113,10 @@ m.sendMessage(args)
 
 
    client.on("message", message => {
-    if (message.content === "b!invite") {
+    if (message.content === "s!invite") {
      const embed = new Discord.RichEmbed()
          .setColor("RANDOM")
-         .addField('Broadcast', `https://discordapp.com/api/oauth2/authorize?client_id=489960386339274771&permissions=8&scope=bot`)
+         .addField('Broadcast', `https://discordapp.com/api/oauth2/authorize?client_id=523861866385113102&permissions=8&scope=bot`)
      message.author.send({embed});
    
     }
@@ -124,10 +124,10 @@ m.sendMessage(args)
 
 
    client.on("message", message => {
-    if (message.content === "v!support") {
+    if (message.content === "s!support") {
      const embed = new Discord.RichEmbed()
          .setColor("RANDOM")
-         .addField('❤سيرفر الدعم الفني', `  https://discord.gg/NV2X2EW  `)
+         .addField('❤سيرفر الدعم الفني', `  https://discord.gg/ZnGpGt  `)
      message.author.send({embed});
    
     }
@@ -144,7 +144,7 @@ m.sendMessage(args)
             .setAuthor(client.user.username,client.user.avatarURL)
             .setThumbnail(client.user.avatarURL)
             .setColor('RANDOM')
-            .setTitle('``INFO Broadcast Bot`` ')
+            .setTitle('``INFO $uicide Broadcast Bot`` ')
             .addField('``My Ping``' , [`${Date.now() - message.createdTimestamp}` + 'MS'], true)
             .addField('``RAM Usage``', `[${(process.memoryUsage().rss / 1048576).toFixed()}MB]`, true)
             .addField('``servers``', [client.guilds.size], true)
