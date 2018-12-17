@@ -160,7 +160,7 @@ m.sendMessage(args)
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag} !`);
-          client.user.setActivity("v!help | v!invite",{type: 'WATCHING'});
+          client.user.setActivity("#$uicide s!help | s!invite",{type: 'WATCHING'});
   
   });
 
