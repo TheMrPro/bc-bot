@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = "s!"
+var prefix = "v!"
 
 
 
@@ -99,13 +99,13 @@ m.sendMessage(args)
          .setThumbnail(message.author.avatarURL)
          .setDescription(`**Help|هيلب
 
-       s!obc | لأرسال برود كاست للكل
+       v!obc | لأرسال برود كاست للكل
 
-       s!bc  |  لأرسال برود كاست للأونلاين
+       v!bc  |  لأرسال برود كاست للأونلاين
 
-       s!invite | لدعوة البوت الي سيرفرك
+       v!invite | لدعوة البوت الي سيرفرك
 
-       s!support | سيرفر السبورت** `)
+       v!support | سيرفر السبورت** `)
    message.author.sendEmbed(embed)
    
    }
@@ -113,10 +113,10 @@ m.sendMessage(args)
 
 
    client.on("message", message => {
-    if (message.content === "s!invite") {
+    if (message.content === "v!invite") {
      const embed = new Discord.RichEmbed()
          .setColor("RANDOM")
-         .addField('Broadcast', `https://discordapp.com/api/oauth2/authorize?client_id=523861866385113102&permissions=8&scope=bot`)
+         .addField('Broadcast', `https://discordapp.com/api/oauth2/authorize?client_id=576919986837127178&permissions=8&scope=bot`)
      message.author.send({embed});
    
     }
@@ -124,10 +124,10 @@ m.sendMessage(args)
 
 
    client.on("message", message => {
-    if (message.content === "s!support") {
+    if (message.content === "v!support") {
      const embed = new Discord.RichEmbed()
          .setColor("RANDOM")
-         .addField('❤سيرفر الدعم الفني', `  https://discord.gg/ZnGpGt  `)
+         .addField('❤سيرفر الدعم الفني', `  https://discord.gg/9JammXW  `)
      message.author.send({embed});
    
     }
@@ -160,7 +160,7 @@ m.sendMessage(args)
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag} !`);
-          client.user.setActivity("#$uicide s!help | s!invite",{type: 'WATCHING'});
+          client.user.setActivity("Verux v!help | v!invite",{type: 'WATCHING'});
   
   });
 
